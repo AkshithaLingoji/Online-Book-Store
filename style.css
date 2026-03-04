@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    background-color: rgb(242, 245, 237);
+    /* padding: 0 20px; */
+    
+
+}
+.logo{
+    width:80px;
+    height:auto;
+    margin-left: 50px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(160, 94, 14);
+    transition: 0.3s ease;
+}
+#navbar li a:hover{
+    color: rgb(101, 101, 233);
+}
+#hero{
+    height: 60vh;
+    background-image: url(img/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#hero h1{
+    color:white;
+    margin-left: 20px;
+    font-size: 65px;
+}
+
+#hero p{
+    color:white;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+#hero button{
+    padding: 10px 20px;
+    background-color: rgb(241, 189, 55);
+    color: black;
+    border-radius: 12px;
+    outline: none;
+    border: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
