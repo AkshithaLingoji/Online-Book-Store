@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookHaven | Online Book Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="index.html" class="logo">BookHaven</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero Banner">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1>Discover Your Next Favorite Book</h1>
+        <p>Explore thousands of books across all genres</p>
+        <a href="catalog.html" class="btn btn-primary">Browse Catalog</a>
+      </div>
+    </section>
+
+    <section class="features section-spacing">
+      <div class="container">
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🚚</span>
+            <h3>Free Delivery</h3>
+            <p>Fast and reliable doorstep delivery on eligible orders.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🔒</span>
+            <h3>Secure Payment</h3>
+            <p>Trusted and encrypted transactions for safe checkout.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">↩️</span>
+            <h3>Easy Returns</h3>
+            <p>Simple return process with quick support assistance.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">💬</span>
+            <h3>24/7 Support</h3>
+            <p>Our team is always available to help you anytime.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals section-spacing" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <h2>New Arrivals</h2>
+          <p>Fresh picks handpicked for every reader.</p>
+        </div>
+        <div class="book-grid">
+          <article class="book-card">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80" alt="The Midnight Pages book cover" />
+            <div class="book-info">
+              <h3>The Midnight Pages</h3>
+              <p class="price">₹19.99</p>
+              <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+          <article class="book-card">
+            <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=600&q=80" alt="Atomic Focus book cover" />
+            <div class="book-info">
+              <h3>Atomic Focus</h3>
+              <p class="price">₹14.50</p>
+              <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+          <article class="book-card">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=80" alt="Deep Work Essentials book cover" />
+            <div class="book-info">
+              <h3>Deep Work Essentials</h3>
+              <p class="price">₹22.00</p>
+              <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+          <article class="book-card">
+            <img src="https://images.unsplash.com/photo-1495640388908-05fa85288e61?auto=format&fit=crop&w=600&q=80" alt="The Learning Curve book cover" />
+            <div class="book-info">
+              <h3>The Learning Curve</h3>
+              <p class="price">₹17.75</p>
+              <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+          <article class="book-card">
+            <img src="https://images.unsplash.com/photo-1513001900722-370f803f498d?auto=format&fit=crop&w=600&q=80" alt="Mindful Chapters book cover" />
+            <div class="book-info">
+              <h3>Mindful Chapters</h3>
+              <p class="price">₹16.20</p>
+              <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+          <article class="book-card">
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=80" alt="Beyond the Syllabus book cover" />
+            <div class="book-info">
+              <h3>Beyond the Syllabus</h3>
+              <p class="price">₹21.40</p>
+              <a href="#" class="btn btn-outline">View Details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section-spacing">
+      <div class="container">
+        <div class="section-head">
+          <h2>Browse by Category</h2>
+          <p>Find books that match your interests.</p>
+        </div>
+        <div class="category-list">
+          <a href="#" class="category-pill">Fiction</a>
+          <a href="#" class="category-pill">Non-Fiction</a>
+          <a href="#" class="category-pill">Self-Help</a>
+          <a href="#" class="category-pill">Academic</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section-spacing">
+      <div class="container">
+        <div class="newsletter-box">
+          <h2>Stay Updated</h2>
+          <p>Get the latest arrivals and exclusive offers in your inbox.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h3>About</h3>
+        <p>BookHaven is your trusted online destination for thoughtfully curated books across every genre.</p>
+      </section>
+      <section>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact / Social</h3>
+        <ul>
+          <li><a href="mailto:support@bookhaven.com">support@bookhaven.com</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">X (Twitter)</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BookHaven. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

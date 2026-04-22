@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookHaven | Catalog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="index.html" class="logo">BookHaven</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" class="active">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div class="container">
+        <p class="catalog-breadcrumb">Home / Catalog</p>
+        <h1>Explore Our Premium Collection</h1>
+        <p>
+          Browse bestsellers, new releases, and timeless reads across every genre.
+        </p>
+        <div class="catalog-hero-actions">
+          <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-layout section-spacing">
+      <div class="container catalog-filter-shell">
+        <input class="catalog-filter-toggle" type="radio" name="catalog-category" id="cat-all" checked />
+        <input class="catalog-filter-toggle" type="radio" name="catalog-category" id="cat-fiction" />
+        <input class="catalog-filter-toggle" type="radio" name="catalog-category" id="cat-non-fiction" />
+        <input class="catalog-filter-toggle" type="radio" name="catalog-category" id="cat-self-help" />
+        <input class="catalog-filter-toggle" type="radio" name="catalog-category" id="cat-academic" />
+        <input class="catalog-filter-toggle" type="radio" name="catalog-category" id="cat-biographies" />
+
+        <div class="catalog-grid">
+        <aside class="catalog-sidebar" aria-label="Filters">
+          <h2>Filter Books</h2>
+
+          <div class="filter-block">
+            <h3>Categories</h3>
+            <ul class="category-filter-list">
+              <li><label for="cat-all">All Books</label></li>
+              <li><label for="cat-fiction">Fiction</label></li>
+              <li><label for="cat-non-fiction">Non-Fiction</label></li>
+              <li><label for="cat-self-help">Self-Help</label></li>
+              <li><label for="cat-academic">Academic</label></li>
+              <li><label for="cat-biographies">Biographies</label></li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="catalog-content" aria-label="Books Listing">
+          <div class="catalog-actions">
+            <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+          </div>
+          <div class="catalog-book-grid">
+            <article class="book-card cat-fiction" id="book-whispers">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Whispers in the Dark book cover" />
+              <div class="book-info">
+                <h3>Whispers in the Dark</h3>
+                <p class="price">₹18.99</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-non-fiction cat-self-help" id="book-think-better">
+              <img src="https://images.unsplash.com/photo-1495640388908-05fa85288e61?auto=format&fit=crop&w=700&q=80" alt="Think Better Daily book cover" />
+              <div class="book-info">
+                <h3>Think Better Daily</h3>
+                <p class="price">₹15.60</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-academic" id="book-foundations">
+              <img src="https://images.unsplash.com/photo-1513001900722-370f803f498d?auto=format&fit=crop&w=700&q=80" alt="Foundations of Physics book cover" />
+              <div class="book-info">
+                <h3>Foundations of Physics</h3>
+                <p class="price">₹26.45</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-self-help" id="book-productive-mind">
+              <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=700&q=80" alt="The Productive Mind book cover" />
+              <div class="book-info">
+                <h3>The Productive Mind</h3>
+                <p class="price">₹20.00</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-fiction" id="book-beyond-imagination">
+              <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=700&q=80" alt="Beyond Imagination book cover" />
+              <div class="book-info">
+                <h3>Beyond Imagination</h3>
+                <p class="price">₹13.40</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-academic" id="book-designing-systems">
+              <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=700&q=80" alt="Designing Better Systems book cover" />
+              <div class="book-info">
+                <h3>Designing Better Systems</h3>
+                <p class="price">₹28.90</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-biographies" id="book-echoes">
+              <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=700&q=80" alt="Echoes of Time book cover" />
+              <div class="book-info">
+                <h3>Echoes of Time</h3>
+                <p class="price">₹17.30</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-non-fiction cat-self-help" id="book-mastering-communication">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80" alt="Mastering Communication book cover" />
+              <div class="book-info">
+                <h3>Mastering Communication</h3>
+                <p class="price">₹16.80</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-academic" id="book-calculus">
+              <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=700&q=80" alt="Calculus for Engineers book cover" />
+              <div class="book-info">
+                <h3>Calculus for Engineers</h3>
+                <p class="price">₹31.20</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-non-fiction" id="book-business-growth">
+              <img src="https://images.unsplash.com/photo-1474932430478-367dbb6832c1?auto=format&fit=crop&w=700&q=80" alt="Business Growth Blueprint book cover" />
+              <div class="book-info">
+                <h3>Business Growth Blueprint</h3>
+                <p class="price">₹24.75</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-self-help" id="book-psychology-habits">
+              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Psychology of Habits book cover" />
+              <div class="book-info">
+                <h3>Psychology of Habits</h3>
+                <p class="price">₹19.20</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="book-card cat-fiction" id="book-literary-journeys">
+              <img src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=700&q=80" alt="Literary Journeys book cover" />
+              <div class="book-info">
+                <h3>Literary Journeys</h3>
+                <p class="price">₹14.10</p>
+                <button type="button" class="btn btn-outline add-to-cart-btn">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h3>About</h3>
+        <p>BookHaven is your trusted online destination for thoughtfully curated books across every genre.</p>
+      </section>
+      <section>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact / Social</h3>
+        <ul>
+          <li><a href="mailto:support@bookhaven.com">support@bookhaven.com</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">X (Twitter)</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BookHaven. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

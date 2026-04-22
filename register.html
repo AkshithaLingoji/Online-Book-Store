@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookHaven | Register</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">BookHaven</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="register.html" class="active">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="register-wrapper">
+        <div class="form-card">
+          <h2>Create Account</h2>
+
+          <form onsubmit="return validateRegister();">
+            <table>
+              <tr>
+                <td>Name</td>
+                <td><input type="text" id="name" /></td>
+              </tr>
+
+              <tr>
+                <td>Email</td>
+                <td><input type="text" id="email" /></td>
+              </tr>
+
+              <tr>
+                <td>Password</td>
+                <td><input type="password" id="password" /></td>
+              </tr>
+
+              <tr>
+                <td>Confirm</td>
+                <td><input type="password" id="confirm" /></td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <button class="btn btn-primary form-btn">Register</button>
+                </td>
+              </tr>
+            </table>
+
+            <p class="switch-link">
+              Already have an account?
+              <a href="login.html">Login</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <section>
+          <h3>About</h3>
+          <p>BookHaven is your trusted online destination for curated books.</p>
+        </section>
+        <section>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Contact</h3>
+          <p>support@bookhaven.com</p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

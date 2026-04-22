@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookHaven | Payment</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">BookHaven</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="payment-wrapper">
+    <div class="payment-card">
+
+      <h2>Payment Details</h2>
+
+      <form onsubmit="return validatePayment()">
+        <table>
+
+          <tr>
+            <td>Card Holder</td>
+            <td><input type="text" id="holder"></td>
+          </tr>
+
+          <tr>
+            <td>Card Number</td>
+            <td><input type="text" id="card"></td>
+          </tr>
+
+          <tr>
+            <td>Expiry</td>
+            <td><input type="text" id="expiry" placeholder="MM/YY"></td>
+          </tr>
+
+          <tr>
+            <td>CVV</td>
+            <td><input type="password" id="cvv"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <button class="btn btn-primary pay-btn">Pay Now</button>
+            </td>
+          </tr>
+
+        </table>
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <h3>About</h3>
+      <p>BookHaven is your trusted online destination for curated books.</p>
+    </section>
+    <section>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </section>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

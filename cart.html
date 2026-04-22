@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookHaven | Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="index.html" class="logo">BookHaven</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-hero">
+      <div class="container">
+        <p class="cart-breadcrumb">Home / Cart</p>
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected books before placing the order.</p>
+      </div>
+    </section>
+
+    <section class="cart-layout section-spacing">
+      <div class="container cart-grid">
+        <section class="cart-table-card" aria-label="Cart Items">
+          <div class="cart-table-head">
+            <h2>Books in Cart</h2>
+            <p><span id="cart-item-count">4</span> items</p>
+          </div>
+
+          <div class="cart-table-wrap">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Book</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="cart-table-body">
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <aside class="order-summary" aria-label="Order Summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="summary-subtotal">₹76.64</strong>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <strong id="summary-shipping">₹0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Discount</span>
+            <strong id="summary-discount">- ₹6.64</strong>
+          </div>
+          <hr />
+          <div class="summary-row summary-total">
+            <span>Total</span>
+            <strong id="summary-total">₹70.00</strong>
+          </div>
+          <a href="payment.html" class="btn btn-primary checkout-btn">Proceed to Checkout</a>
+          <a href="catalog.html" class="continue-link">Continue Shopping</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h3>About</h3>
+        <p>BookHaven is your trusted online destination for thoughtfully curated books across every genre.</p>
+      </section>
+      <section>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact / Social</h3>
+        <ul>
+          <li><a href="mailto:support@bookhaven.com">support@bookhaven.com</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">X (Twitter)</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BookHaven. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
